@@ -22,7 +22,7 @@ public class Elgamal {
 	public BigInteger y;
 	
 	Elgamal() {
-		p = BigInteger.probablePrime(65, random);
+		p = BigInteger.probablePrime(1024, random);
 		g = new BigInteger("3");
 		x = new BigInteger("1234567890");
 		y = g.modPow(x, p);
